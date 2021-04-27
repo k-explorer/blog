@@ -29,6 +29,16 @@ Dependencies Apache Hive runs on Apache Hadoop, a complex data warehouse built i
     </item>
     
     <item>
+      <title>Intro to R</title>
+      <link>https://k-explorer.github.io/blog/posts/intro-to-r/</link>
+      <pubDate>Mon, 26 Apr 2021 16:08:06 -0700</pubDate>
+      
+      <guid>https://k-explorer.github.io/blog/posts/intro-to-r/</guid>
+      <description>In this article, we&amp;rsquo;ll explore academia&amp;rsquo;s most popular data science programming language: R.
+R is the successor to S, and a relative of the commercial project S+ (S-PLUS). It was created by Ross Ihaka and Robert Gentleman, and was first released in August of 1993. It is used to plot, graph, query, edit, and study data. R is an interpreted language, meaning that R code is executed on the spot, rather than compiled into a binary file that can be executed later.</description>
+    </item>
+    
+    <item>
       <title>What Is SQL Anyway?</title>
       <link>https://k-explorer.github.io/blog/posts/what-is-sql-anyway/</link>
       <pubDate>Mon, 26 Apr 2021 08:48:10 -0700</pubDate>
