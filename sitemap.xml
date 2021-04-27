@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://k-explorer.github.io/blog/posts/getting-started-with-homebrew/</loc>
+    <loc>/posts/getting-started-with-homebrew/</loc>
     <lastmod>2021-04-26T16:08:06-07:00</lastmod>
   </url><url>
-    <loc>https://k-explorer.github.io/blog/posts/hive-or-spark/</loc>
+    <loc>/posts/hive-or-spark/</loc>
     <lastmod>2021-04-26T16:08:06-07:00</lastmod>
   </url><url>
-    <loc>https://k-explorer.github.io/blog/posts/intro-to-r/</loc>
+    <loc>/posts/intro-to-r/</loc>
     <lastmod>2021-04-26T16:08:06-07:00</lastmod>
   </url><url>
-    <loc>https://k-explorer.github.io/blog/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2021-04-26T16:08:06-07:00</lastmod>
   </url><url>
-    <loc>https://k-explorer.github.io/blog/</loc>
+    <loc>/</loc>
     <lastmod>2021-04-26T16:08:06-07:00</lastmod>
   </url><url>
-    <loc>https://k-explorer.github.io/blog/posts/what-is-sql-anyway/</loc>
+    <loc>/posts/what-is-sql-anyway/</loc>
     <lastmod>2021-04-26T08:48:10-07:00</lastmod>
   </url><url>
-    <loc>https://k-explorer.github.io/blog/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://k-explorer.github.io/blog/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
