@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.82.1" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>What Is SQL Anyway &middot; The DS Dev</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://k-explorer.github.io/blogcss/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://k-explorer.github.io/blogcss/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://k-explorer.github.io/blogcss/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://k-explorer.github.io/blogcss/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://k-explorer.github.io/blog"><h1>The DS Dev</h1></a>
+      <p class="lead">
+       Data Science can change the world 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://k-explorer.github.io/blog">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>What Is SQL Anyway</h1>
+  <time datetime=2021-04-26T08:48:10-0700 class="post-date">Mon, Apr 26, 2021</time>
+  <p>Structured Query Language, or SQL, is a language used for the manipulation and querying of databases. Let’s have an example:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="o">*</span>
+<span class="k">FROM</span> <span class="n">Lemurs</span>
+<span class="k">WHERE</span> <span class="n">Name</span> <span class="o">=</span> <span class="s2">&#34;Blue-eyed Black Lemur&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>SQL is not like HTML. You can’t open an SQL file in a browser and see a pretty-printed table as a result. It just doesn’t work that way. Here is some reasoning:</p>
+<ol>
+<li>How is the browser going to know which database to query?
+<ul>
+<li>OK. I admit that it’s possible to specify that information in the SQL file.</li>
+</ul>
+</li>
+<li>Is it possible to get around the embedded language problem?
+<ul>
+<li>This needs some explanation: to run HTML in a browser, an HTML interpreter has to come packaged with the browser. However, HTML is not a particularly complex language, so this is alright. An SQL interpreter, however, will make things <em>very</em> slow if packaged with an application. Handle all browser redirects, HTML, JavaScript, as well as SQL wouldn’t work easily. But, again, JavaScript libraries that send off SQL queries (I mean <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API">IndexedDB</a> and <a href="https://sql.js.org">SQL.JS</a>) are well supported in browsers.</li>
+</ul>
+</li>
+</ol>
+<p>Why doesn’t SQL run in a browser? Here is a revelation. SQL <em>does</em> run in a browser, and effectively. All <a href="#sql-libraries">SQL libraries</a> (except <a href="https://sqlite.org">SQLite</a>) use a web server. Every website is a web server of some kind. If you’ve installed an SQL library on your system, this web server will be “http://localhost&quot;, a colon, and then a numerical server port. For example, when I run a web server, I like to use <a href="http://localhost:31845">http://localhost:31845</a>. Let me backtrack and explain <strong>ports</strong>. Any web server can have a port. Usually, a web server that isn’t a website, that is, a web server that isn’t displaying info but running a background server process (like SQL), will have port numbers to organize processes. Even regular websites have ports, but they&rsquo;re not used at all. For example, <a href="https://www.google.com:31845">https://www.google.com:31845</a>, is an existing port, but if you try to visit it, the browser will load never-endingly because nothing is there, not even a process. Back to SQL. Like I said (or typed), all <a href="#sql-libraries">SQL libraries</a> (except <a href="https://sqlite.org">SQLite</a>) use a web server. They process queries via the web server, and display the result in an application on your computer, or a command line utility.</p>
+<h2 id="sql-libraries">SQL Libraries</h2>
+<p>Multiple libraries used to run SQL exist. The following list will briefly acquaint you with the most commonly used ones.</p>
+<ol>
+<li>SQLite
+<ul>
+<li>SQLite is my preferred library, as it it small, fast, and does <em>not</em> require a web server or complicated configuration. It is used to store information such as user profiles in many apps, and is preinstalled on Mac, Windows, and Linux machines. It is useful in production and in development.</li>
+</ul>
+</li>
+<li>MySQL
+<ul>
+<li>Uses a web server. MySQL started out as a community project, but was acquired by Oracle Corporation. It has stayed open-source, and is a popular option for production.</li>
+</ul>
+</li>
+<li>PostgreSQL, or Postgres
+<ul>
+<li>The name comes from the fact that Postgres is the successor to the Ingres database, which was developed at the University of California, Berkeley. Postgres is very similar to MySQL and is equally popular for production.</li>
+</ul>
+</li>
+<li>MariaDB
+<ul>
+<li>MariaDB is extremely similar to MySQL. It was forked from the original project when MySQL was acquired by Oracle. MySQL&rsquo;s creator, Michael Widenius, thought that Oracle&rsquo;s owning MySQL would be problematic, as Oracle already had their own library, Oracle DB, and might not give MySQL any attention. MariaDB and MySQL are few differences, except that
+<ul>
+<li>MariaDB has stayed a community project</li>
+<li>MariaDB is <em>slightly</em> less used.</li>
+<li>The list of languages that can be used to connect to either of the databases is different, though not significantly.</li>
+</ul>
+</li>
+<li>The two databases are so similar that the MariaDB <a href="#odbc">ODBC</a> can be used to connect to MySQL!</li>
+</ul>
+</li>
+<li>Apache Spark
+<ul>
+<li>Spark, built by the Apache Software Foundation, is not exactly an SQL library, but a Java based program for data manipulation similar to SQL. However, it does include an SQL component, Spark SQL, which makes it worth including on this list.</li>
+</ul>
+</li>
+</ol>
+<h2 id="odbc">ODBC</h2>
+<p>An <strong>O</strong>pen <strong>D</strong>atabase <strong>C</strong>onnectivity, or ODBC, is an interface between the SQL library and the application. For example, LibreOffice Base, a popular database editor, uses ODBC to establish a connection between it and any of the SQL libraries it supports. JDBC (<strong>J</strong>ava <strong>D</strong>atabase <strong>C</strong>onnectivity) is also used for the same purpose, but only in applications made with Java.</p>
+<h2 id="syntax">Syntax</h2>
+<p>Finally we arrive at SQL syntax. SQL&rsquo;s classic syntax is unique. It uses English words (see table below) to tell the library or ODBC connected application what to do.</p>
+<table>
+<thead>
+<tr>
+<th>Statement</th>
+<th>Description</th>
+<th>Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SELECT</td>
+<td>Specify columns to display</td>
+<td>Column names, separated by commas, or &lsquo;*&rsquo; for &lsquo;all&rsquo;</td>
+</tr>
+<tr>
+<td>WHERE</td>
+<td>Narrow down results</td>
+<td>Expression, e.g. &lsquo;Year &gt; 2000&rsquo;</td>
+</tr>
+<tr>
+<td>UPDATE</td>
+<td>Change all values returned by a WHERE clause to a specific value</td>
+<td>SET statement, e.g. &ldquo;SET Name = &lsquo;Bushbaby&rsquo;&rdquo;, and WHERE clause, e.g. &ldquo;WHERE ID = 1&rdquo;</td>
+</tr>
+<tr>
+<td>ALTER</td>
+<td>ALTER metadata. Substatements include ALTER TABLE and ALTER COLUMN</td>
+<td>ADD substatement or TO substatement. E.g. &ldquo;ALTER TABLE ADD COLUMN Username&rdquo;</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>Deletes values returned by a WHERE clause. Exactly like UPDATE.</td>
+<td>See UPDATE.</td>
+</tr>
+</tbody>
+</table>
+<p>Of course there are some substatements, but these are the main ones. All in all, SQL is a complete data manipulation language.</p>
+<p>Now you know what SQL is, so when you see an article on this website about it, you won&rsquo;t be scratching your head.</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

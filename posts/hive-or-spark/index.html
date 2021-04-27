@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.82.1" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hive or Spark &middot; The DS Dev</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://k-explorer.github.io/blogcss/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://k-explorer.github.io/blogcss/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://k-explorer.github.io/blogcss/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://k-explorer.github.io/blogcss/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://k-explorer.github.io/blog"><h1>The DS Dev</h1></a>
+      <p class="lead">
+       Data Science can change the world 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://k-explorer.github.io/blog">Home</a> </li>
+        
+      </ul>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Hive or Spark</h1>
+  <time datetime=2021-04-26T16:08:06-0700 class="post-date">Mon, Apr 26, 2021</time>
+  <p><img src="/images/spark.png" alt="Spark">
+<figure>
+    <img src="/images/hive.png" height="200"/> 
+</figure>
+
+Lots of data scientists wonder whether to use Apache Hive or Apache Spark. This article aims to condense the problem into a short comparison.</p>
+<h2 id="dependencies">Dependencies</h2>
+<p>Apache Hive runs on Apache Hadoop, a complex data warehouse built in Java. To use Hive, Hadoop must be installed and configured as well. Spark, on the other hand, originally required Hadoop but does not currently. Hive is it’s own Java library, but Spark has a different distribution for each of it’s three supported languages:</p>
+<ol>
+<li>Spark: Scala
+<ul>
+<li>This is the most used Spark distribution</li>
+</ul>
+</li>
+<li>PySpark: Python
+<ul>
+<li>Python distribution: not as commonly used</li>
+</ul>
+</li>
+<li>SparkR: R
+<ul>
+<li>This distribution is an R package. Another R package used for Spark, &ldquo;<a href="https://spark.rstudio.com">sparklyr</a>&rdquo;, is much more popular, as this package has many problems. While SparkR was built by the original Apache Spark team, &ldquo;sparklyr&amp;&rdquo; was built by RStudio, the developers of the popular R IDE.</li>
+</ul>
+</li>
+</ol>
+<h2 id="installation">Installation</h2>
+<p>Apache provides zips and .tar.gz files for both software. In addition, they can both be installed with the <a href="https://brew.sh">Homebrew</a>.</p>
+<h2 id="performance">Performance</h2>
+<p>Hadoop is great for <strong>batch processing</strong>, but is extremely slow with <strong>iterative</strong> or <strong>stream processing</strong> (see <a href="#data-processing">Data Processing</a>). When researchers at University of California, Berkeley, who were using Hive, discovered this, they built Spark to fix the problem. They discovered that for iterative processing, Spark could be over <strong><em>100 times faster</em></strong> than Hive!</p>
+<h2 id="data-processing">Data Processing</h2>
+<p>Apache Hive uses Hadoop MapReduce to process data, while Spark uses Resilient Distributed Databases (RDDs). While Hive uses batch processing, Spark uses stream processing. When batch processing, data is processed once all the data has been collected. Obviously, this is not a good option for real-time data processing. Stream processing processes small packets of data as they come in.</p>
+<h2 id="data-storage">Data Storage</h2>
+<p>Spark does not provide a distributed file storage system, so it is mainly used for computation, on top of a Hadoop database, though Hadoop is not a Spark prerequisite (see <a href="#dependencies">Dependencies</a>). Spark can connect to <a href="https://localhost:31845/what-is-sql-anyway#sql-libraries">SQL libraries</a>, however, and these can be used to store data. Hadoop’s only option is to use HDFS (<strong>H</strong>adoop <strong>D</strong>istributed <strong>F</strong>ile <strong>S</strong>torage).</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Overall, the choice of using Spark or Hive depends on what <em>you</em> want to do with your data. It’s a matter of opinion, and neither is the better choice.</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>
