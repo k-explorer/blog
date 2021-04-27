@@ -52,9 +52,35 @@
     <div class="post">
   <h1>Intro to R</h1>
   <time datetime=2021-04-26T16:08:06-0700 class="post-date">Mon, Apr 26, 2021</time>
-  <p>In this article, we&rsquo;ll explore academia&rsquo;s most popular data science programming language: R.</p>
-<p>R is the successor to S, and a relative of the commercial project S+ (S-PLUS). It was created by Ross Ihaka and Robert Gentleman, and was first released in August of 1993. It is used to plot, graph, query, edit, and study data. R is an interpreted language, meaning that R code is executed on the spot, rather than compiled into a binary file that can be executed later. To use R, you can download it from the <a href="https://www.r-project.org">R website</a>, or install it via <a href="http://localhost:31845/getting-started-with-homebrew">Homebrew</a> with <code>brew install r</code>.</p>
-<p>At <a href="http://localhost:31845">The DS Dev</a>, we recommend downloading <a href="https://rstudio.com/products/rstudio/download/%23download">RStudio</a>, which is a free and extremely useful IDE for R, with many features. RStudio will be used for the examples in all of our R articles.</p>
+  <p>In this article, we&rsquo;ll get you setup with academia&rsquo;s most popular data science programming language: R.</p>
+<p>R is the successor to S, and a relative of the commercial project S+ (S-PLUS). It was created by Ross Ihaka and Robert Gentleman, and was first released in August of 1993. It is used to plot, graph, query, edit, and study data. R is an interpreted language, meaning that R code is executed on the spot, rather than compiled into a binary file that can be executed later. To use R, you can download it from the <a href="https://www.r-project.org">R website</a>, or install it via <a href="https://k-explorer.github.io/posts/getting-started-with-homebrew">Homebrew</a> with <code>brew install r</code>.</p>
+<p>At <a href="https://k-explorer.github.io/blog">The DS Dev</a>, we recommend downloading <a href="https://rstudio.com/products/rstudio/download/%23download">RStudio</a>, which is a free and extremely useful IDE for R, with many features. RStudio will be used for the examples in all of our R articles.</p>
+<p>Once you&rsquo;ve setup R (and you can check that this has been done by typing <code>R</code> in Terminal and seeing what happens), and installed, opened, and checked out RStudio (optional but <strong><em>highly</em></strong> recommended), it&rsquo;s time to start using R.</p>
+<p>R is a language with an <em>extremely</em> large number of packages to assist in your data science workflow. The most important ones are…</p>
+<ol>
+<li>
+<p>The Tidyverse (<code>install.packages('tidyverse')</code>): a collection of packages to make R code neater and faster. Includes</p>
+<ul>
+<li><a href="https://dplyr.tidyverse.org/"><strong>dplyr</strong></a>, to query data frames, or <strong>tibbles</strong></li>
+<li><a href="https://tibble.tidyverse.org"><strong>tibble</strong></a>, a package to manipulate a neater type of data frame.</li>
+<li><a href="https://ggplot2.tidyverse.org"><strong>ggplot2</strong></a>, a package to make elegant data visualizations, i.e. graphs and plots</li>
+<li><a href="https://tidyr.tidyverse.org"><strong>tidyr</strong></a>, a package for tidying R code</li>
+<li><a href="https://readr.tidyverse.org"><strong>readr</strong></a>, a package for importing data from all kinds of files</li>
+<li><a href="https://forcats.tidyverse.org"><strong>forcats</strong></a>, to work with factors</li>
+<li><a href="https://purrr.tidyverse.org"><strong>purrr</strong></a>, to enhance R&rsquo;s functional programming toolkit</li>
+<li><a href="https://stringr.tidyverse.org"><strong>stringr</strong></a>, to assist with strings, however unimportant they may be</li>
+</ul>
+<p>Not included in the main package collection but equally useful are</p>
+<ul>
+<li><a href="https://googledrive.tidyverse.org"><strong>googledrive</strong></a>(<code>install.packages('googledrive')</code>), an R interface to your Google Drive</li>
+<li><a href="https://googlesheets4.tidyverse.org"><strong>googlesheets4</strong></a>(<code>install.packages('googlesheets4')</code>), to turn your GSheets into Tibbles.</li>
+</ul>
+</li>
+<li>
+<p>DBI (<code>install.packages('DBI')</code>), and ODBC (<code>install.packages('odbc')</code>): DBI is an R database interface, for accessing and manipulating SQL and NoSQL databases. As <strong>drivers</strong>, interfaces between applications (or programs), and databases, are necessary, R comes with the  <code>odbc</code> package, used for managing all databases using ODBC data sources on your system (see any ODBC setup tutorial, especially the one <a href="https://db.rstudio.com/best-practices/drivers/">here</a>, which focuses on R). Package drivers meant to target only one database include <code>RSQLite</code>, <code>RMariaDB</code>, and <code>RMySQL</code>. As RMySQL is discontinued, it is recommended that you use <code>RMariaDB</code>, as the two databases are so similar that the same driver can be used for both (see &ldquo;What is SQL Anyway?&rdquo; post&rsquo;s <a href="/blog/posts/what-is-sql-anyway">database section</a>).</p>
+</li>
+</ol>
+<p>Once you&rsquo;ve done all of the above steps, you&rsquo;re ready to start working with R. A recommended tutorial to continue learning from is <em>R for Data Science</em>, by Hadley Wickham (one of the developers of RStudio). R4DS is free online at <a href="https://r4ds.had.co.nz">r4ds.had.co.nz</a>.</p>
 
 </div>
 

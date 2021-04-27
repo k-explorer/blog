@@ -5,6 +5,16 @@
     <link>https://k-explorer.github.io/blog/tags/</link>
     <description>Recent content in Tags on The DS Dev</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://k-explorer.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Apr 2021 16:08:06 -0700</lastBuildDate><atom:link href="https://k-explorer.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>software</title>
+      <link>https://k-explorer.github.io/blog/tags/software/</link>
+      <pubDate>Mon, 26 Apr 2021 16:08:06 -0700</pubDate>
+      
+      <guid>https://k-explorer.github.io/blog/tags/software/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
