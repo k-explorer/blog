@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on The DS Dev</title>
-    <link>/posts/</link>
+    <link>https://k-explorer.github.io/blog/posts/</link>
     <description>Recent content in Posts on The DS Dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Apr 2021 16:08:06 -0700</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Apr 2021 16:08:06 -0700</lastBuildDate><atom:link href="https://k-explorer.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started with Homebrew</title>
-      <link>/posts/getting-started-with-homebrew/</link>
+      <link>https://k-explorer.github.io/blog/posts/getting-started-with-homebrew/</link>
       <pubDate>Mon, 26 Apr 2021 16:08:06 -0700</pubDate>
       
-      <guid>/posts/getting-started-with-homebrew/</guid>
+      <guid>https://k-explorer.github.io/blog/posts/getting-started-with-homebrew/</guid>
       <description>Homebrew is a popular package manager which has the ability to install almost any application or software in existence. To start using Homebrew, you&amp;amp;&amp;rsquo;ll have to open the command line, which is the &amp;ldquo;Terminal&amp;rdquo; app or program on Mac and Linux and &amp;ldquo;command.exe&amp;rdquo; on Windows.
 Once in the application or program shown above, type the following command, and hit Return:
 1  /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)   The /bin/bash should be changed to /bin/zsh on Mac.</description>
@@ -20,30 +20,30 @@ Once in the application or program shown above, type the following command, and 
     
     <item>
       <title>Hive or Spark</title>
-      <link>/posts/hive-or-spark/</link>
+      <link>https://k-explorer.github.io/blog/posts/hive-or-spark/</link>
       <pubDate>Mon, 26 Apr 2021 16:08:06 -0700</pubDate>
       
-      <guid>/posts/hive-or-spark/</guid>
+      <guid>https://k-explorer.github.io/blog/posts/hive-or-spark/</guid>
       <description>Lots of data scientists wonder whether to use Apache Hive or Apache Spark. This article aims to condense the problem into a short comparison.
 Dependencies Apache Hive runs on Apache Hadoop, a complex data warehouse built in Java. To use Hive, Hadoop must be installed and configured as well. Spark, on the other hand, originally required Hadoop but does not currently. Hive is it’s own Java library, but Spark has a different distribution for each of it’s three supported languages:</description>
     </item>
     
     <item>
       <title>Intro to R</title>
-      <link>/posts/intro-to-r/</link>
+      <link>https://k-explorer.github.io/blog/posts/intro-to-r/</link>
       <pubDate>Mon, 26 Apr 2021 16:08:06 -0700</pubDate>
       
-      <guid>/posts/intro-to-r/</guid>
+      <guid>https://k-explorer.github.io/blog/posts/intro-to-r/</guid>
       <description>In this article, we&amp;rsquo;ll explore academia&amp;rsquo;s most popular data science programming language: R.
 R is the successor to S, and a relative of the commercial project S+ (S-PLUS). It was created by Ross Ihaka and Robert Gentleman, and was first released in August of 1993. It is used to plot, graph, query, edit, and study data. R is an interpreted language, meaning that R code is executed on the spot, rather than compiled into a binary file that can be executed later.</description>
     </item>
     
     <item>
       <title>What Is SQL Anyway</title>
-      <link>/posts/what-is-sql-anyway/</link>
+      <link>https://k-explorer.github.io/blog/posts/what-is-sql-anyway/</link>
       <pubDate>Mon, 26 Apr 2021 08:48:10 -0700</pubDate>
       
-      <guid>/posts/what-is-sql-anyway/</guid>
+      <guid>https://k-explorer.github.io/blog/posts/what-is-sql-anyway/</guid>
       <description>Structured Query Language, or SQL, is a language used for the manipulation and querying of databases. Let’s have an example:
 1 2 3  SELECT * FROM Lemurs WHERE Name = &amp;#34;Blue-eyed Black Lemur&amp;#34;   SQL is not like HTML. You can’t open an SQL file in a browser and see a pretty-printed table as a result. It just doesn’t work that way. Here is some reasoning:
  How is the browser going to know which database to query?</description>
