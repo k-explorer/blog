@@ -6,13 +6,31 @@
     <description>Recent content in Tags on The DS Dev</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Apr 2021 16:08:06 -0700</lastBuildDate><atom:link href="https://k-explorer.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 May 2021 16:45:28 -0700</lastBuildDate><atom:link href="https://k-explorer.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>software</title>
+      <title>Software</title>
       <link>https://k-explorer.github.io/blog/tags/software/</link>
-      <pubDate>Mon, 26 Apr 2021 16:08:06 -0700</pubDate>
+      <pubDate>Mon, 17 May 2021 16:45:28 -0700</pubDate>
       
       <guid>https://k-explorer.github.io/blog/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://k-explorer.github.io/blog/tags/r/</link>
+      <pubDate>Mon, 26 Apr 2021 16:08:06 -0700</pubDate>
+      
+      <guid>https://k-explorer.github.io/blog/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://k-explorer.github.io/blog/tags/sql/</link>
+      <pubDate>Mon, 26 Apr 2021 08:48:10 -0700</pubDate>
+      
+      <guid>https://k-explorer.github.io/blog/tags/sql/</guid>
       <description></description>
     </item>
     

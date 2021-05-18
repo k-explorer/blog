@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on The DS Dev</title>
+    <link>https://k-explorer.github.io/blog/tags/r/</link>
+    <description>Recent content in R on The DS Dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Apr 2021 16:08:06 -0700</lastBuildDate><atom:link href="https://k-explorer.github.io/blog/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro to R</title>
+      <link>https://k-explorer.github.io/blog/posts/intro-to-r/</link>
+      <pubDate>Mon, 26 Apr 2021 16:08:06 -0700</pubDate>
+      
+      <guid>https://k-explorer.github.io/blog/posts/intro-to-r/</guid>
+      <description>In this article, we&amp;rsquo;ll get you setup with academia&amp;rsquo;s most popular data science programming language: R.
+R is the successor to S, and a relative of the commercial project S+ (S-PLUS). It was created by Ross Ihaka and Robert Gentleman, and was first released in August of 1993. It is used to plot, graph, query, edit, and study data. R is an interpreted language, meaning that R code is executed on the spot, rather than compiled into a binary file that can be executed later.</description>
+    </item>
+    
+  </channel>
+</rss>
